@@ -23,7 +23,7 @@ const getUsers = (users) => {
 
         users.filter((user) => {
             const listItem = document.createElement('li');
-            listItem.innerText = user.name + ' ' + user.email + ' ' + user.address.city + ' ' + user.address.street;
+            listItem.innerText = `${user.name} ${user.email} ${user.address.city} ${user.address.street}`;  
             usersBox.append(listItem);
         })
 }
@@ -65,7 +65,6 @@ submitButton.addEventListener('click', getItem);
 submitButton.addEventListener('click', changeLooks);
 
 //submiting data to local storage 
-
 function store() {
     let i = localStorage.getItem('id');
     i++;
@@ -78,7 +77,7 @@ function store() {
 }
 
 //retrieving data from local storage on page reload
-addEventListener("load", (event) => {});
+addEventListener('load', (event) => {});
 onload = (event) => {
         if (localStorage.length > 0) {
             for(let i = 1; i <= localStorage.getItem('id'); i ++) {
@@ -88,11 +87,10 @@ onload = (event) => {
             }
         }
 
-
 //function to add new user to the list
 function getItem() {
     let id = localStorage.getItem('id');
-    let addedUser = localStorage.getItem('name-' + id) + ' ' + localStorage.getItem('email-' + id) + ' ' + localStorage.getItem('city-' + id) + ' ' + localStorage.getItem('street-' + id);  
+    let addedUser = `${localStorage.getItem('name-' + id)} ${localStorage.getItem('email-' + id)} ${localStorage.getItem('city-' + id)} ${localStorage.getItem('street-' + id)}`;
     const newFormUser = document.createElement('li');
     newFormUser.innerHTML = addedUser;
     usersBox.prepend(newFormUser);
@@ -101,18 +99,16 @@ function getItem() {
 //function to change button and title color plus clear the form
 function changeLooks() {
     submitButton.classList.add('clicked');
-    submitButton.innerText = "ADDED";
+    submitButton.innerText = 'ADDED';
     allUsers.classList.remove('grey'); 
     setTimeout(addAgain, 3000);  
     return;
 };
 
-
 //reseting styles to the initial form
-
     function addAgain() {
         submitButton.classList.remove('clicked');
-        submitButton.innerText = "ADD";
+        submitButton.innerText = 'ADD';
         userName.value = '';
         userEmail.value = '';
         userCity.value = '';
