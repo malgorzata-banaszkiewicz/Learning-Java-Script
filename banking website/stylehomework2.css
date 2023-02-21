@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  width: 375px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+}
+.banner,
+main {
+  background-color: hsl(0, 0%, 98%);
+}
+
+header button {
+  display: none;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  margin: 20px 20px 0px 20px;
+}
+
+.logo {
+  grid-column: 1;
+}
+
+.hamburger {
+  grid-column: 3;
+  justify-self: end;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 40px;
+  color: hsl(233, 26%, 24%);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h2,
+h3 {
+  color: hsl(233, 26%, 24%);
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.second_h2 {
+  padding-top: 80px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.single_article h3 {
+  margin-bottom: 10px;
+}
+
+p,
+figcaption {
+  color: hsl(233, 8%, 62%);
+  padding-bottom: 10px;
+}
+
+figcaption {
+  font-size: 14px;
+}
+
+.banner {
+  background-image: url(bg-intro-mobile.svg);
+  height: 350px;
+  width: 375px;
+}
+
+button:not(.desktop_nav) {
+  color: hsl(0, 0%, 100%);
+  border: none;
+  padding: 10px 40px;
+  border-radius: 25px;
+  background-color: hsl(192, 70%, 51%);
+  background-image: linear-gradient(
+    284deg,
+    hsl(192, 70%, 51%) 0%,
+    hsl(136, 65%, 51%) 50%
+  );
+}
+
+.first_cta {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.about_easybank img:first-of-type {
+  margin-top: 60px;
+}
+
+.icon_wrapper img {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 120px;
+}
+
+.footer {
+  background-color: hsl(233, 26%, 24%);
+}
+
+.banner_cellphones {
+  width: 375px;
+  position: absolute;
+  right: 0;
+  top: -90px;
+}
+
+.about_easybank {
+  background-color: hsl(220, 16%, 96%);
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.latest_articles {
+  background-color: hsl(0, 0%, 98%);
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.articles {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.single_article {
+  background-color: hsl(0, 0%, 100%);
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.single_article:last-of-type {
+  margin-bottom: 120px;
+}
+
+.single_article img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.about_easybank,
+.latest_articles,
+.div_with_h1 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.footer_logo {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.social_media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.social_media div {
+  margin: 7px 7px;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+}
+nav p {
+  color: hsl(0, 0%, 100%);
+}
+
+.small {
+  color: hsl(233, 8%, 62%);
+  margin-bottom: 30px;
+}
+
+.navigation,
+.cta_copyrights {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second_cta {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+button,
+.latest_articles h3,
+.social_media div,
+.navigation p {
+  cursor: pointer;
+}
+
+button:not(.desktop_nav):active {
+  opacity: 0.33;
+}
+.single_article h3:active,
+nav p:active {
+  color: hsl(136, 65%, 51%);
+}
+.facebook_icon {
+  background-image: url(/icon-facebook.svg);
+}
+.facebook_icon:active {
+  background-image: url(/facebook-7-24.png);
+}
+
+.youtube_icon {
+  background-image: url(/icon-youtube.svg);
+}
+.youtube_icon:active {
+  background-image: url(/youtube-4-24.png);
+}
+
+.twitter_icon {
+  background-image: url(/icon-twitter.svg);
+}
+.twitter_icon:active {
+  background-image: url(/twitter-24.png);
+}
+
+.pinterest_icon {
+  background-image: url(/icon-pinterest.svg);
+}
+.pinterest_icon:active {
+  background-image: url(/pinterest-4-24.png);
+}
+
+.instagram_icon {
+  background-image: url(/icon-instagram.svg);
+}
+.instagram_icon:active {
+  background-image: url(/instagram-24.png);
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    width: 1440px;
+  }
+
+  header,
+  .div_with_h1,
+  .about_easybank,
+  .latest_articles,
+  .second_h2,
+  .footer {
+    padding-left: 150px;
+  }
+
+  .icon_wrapper,
+  .latest_articles,
+  .second_h2,
+  .footer {
+    padding-right: 150px;
+  }
+
+  .additional_desktop_cta {
+    margin-right: 150px;
+    justify-self: end;
+  }
+
+  header {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .desktop_nav:active {
+    text-underline-position: below;
+    border-bottom: 5px solid hsl(136, 65%, 51%);
+    text-decoration: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  header button {
+    display: inline;
+  }
+
+  .desktop_nav {
+    border: none;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(233, 8%, 62%);
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+
+  .banner {
+    background-image: url(bg-intro-desktop.svg);
+    width: 1400px;
+    height: 500px;
+    background-position-x: left;
+    background-position-y: center;
+  }
+
+  .about_easybank {
+    z-index: 1;
+  }
+  .banner_cellphones {
+    width: 650px;
+    bottom: -130px;
+    right: -110px;
+    z-index: 2;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .div_with_h1 {
+    text-align: left;
+  }
+  .why_wrapper {
+    text-align: justify;
+    margin-right: 800px;
+  }
+
+  .icon_wrapper {
+    display: flex;
+    text-align: justify;
+  }
+  .icon_wrapper img {
+    margin-left: 0px;
+  }
+
+  .icon_wrapper div {
+    margin-left: 15px;
+  }
+
+  .second_h2 {
+    text-align: justify;
+    margin-left: 30px;
+    margin-top: 60px;
+  }
+
+  .latest_articles {
+    flex-direction: row;
+    padding-top: 20px;
+  }
+
+  .single_article {
+    margin-right: 20px;
+    height: fit-content;
+  }
+
+  .articles {
+    text-align: left;
+  }
+
+  .latest_articles img:first-of-type {
+    height: 216px;
+    width: 324px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo_social_media {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .social_media {
+    margin-top: 50px;
+  }
+
+  .navigation {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .cta_copyrights {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .nav_one,
+  .nav_two {
+    padding: 30px 30px;
+  }
+
+  .nav_one {
+    margin-right: 60px;
+  }
+}

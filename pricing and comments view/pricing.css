@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+body {
+  background-color: hsl(0, 0%, 94.1%);
+}
+
+.big_wrapper {
+  padding-bottom: 60px;
+  padding-top: 50px;
+}
+.whole_pricing {
+  background-color: hsl(240, 78%, 98%);
+  background-image: url(bg-top.svg), url(bg-bottom.svg);
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+  margin: 50px 40px 60px 40px;
+  box-shadow: 5px 10px 40px hsl(234, 14%, 74%);
+  padding: 40px 80px 50px 80px;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  height: 50vw;
+}
+
+.pricing_range {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  text-align: center;
+  font-size: 20px;
+  color: hsl(233, 13%, 49%);
+  margin-bottom: 20px;
+}
+
+.input_options {
+  color: hsl(234, 14%, 74%);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.price_input {
+  width: 35px;
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: hsl(0, 0%, 100%);
+  border-radius: 40%;
+  padding: 2px 2px;
+  -webkit-appearance: none;
+  margin: 0.5em 0;
+  height: 20px;
+}
+.price_input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: hsl(0, 0%, 94.1%);
+  cursor: pointer;
+  border-radius: 50%;
+}
+.price_input::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: hsl(0, 0%, 94.1%);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.price_input:active {
+  opacity: 50%;
+}
+
+.small {
+  font-size: 25px;
+}
+
+.price_dollar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing_boxes {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  line-height: 3;
+}
+
+.pricing_annually,
+.pricing_monthly {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.pricing_monthly {
+  line-height: 2;
+  display: none;
+}
+
+.pricing_annually {
+  line-height: 2;
+}
+
+.corner_box {
+  background-color: hsl(0, 0%, 100%);
+  padding: 30px 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: hsl(232, 13%, 33%);
+  margin-top: 50px;
+  height: 370px;
+}
+
+.plan_description {
+  line-height: 0.5;
+}
+.learn_more {
+  padding: 15px 60px;
+  text-transform: uppercase;
+  color: hsl(237, 63%, 64%);
+  border: none;
+  margin-top: 30px;
+  border-radius: 5px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.gradient_button {
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: hsl(0, 0%, 100%);
+}
+
+.center_button:active {
+  background-color: hsl(237, 63%, 64%);
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
+}
+.gradient_button:active {
+  background-color: hsl(0, 0%, 100%);
+  background-image: none;
+  color: hsl(237, 63%, 64%);
+  border: 1px solid hsl(237, 63%, 64%);
+}
+
+.center_box {
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  padding: 45px 20px 45px 20px;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 375px) {
+  .pricing_boxes {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .whole_pricing {
+    width: 100%;
+    height: 100%;
+    margin: 0 0;
+    padding: 40px 15px 40px 15px;
+    background-image: url(bg-top.svg);
+    background-position: top 0px right -10px;
+  }
+
+  .big_wrapper {
+    padding: 0 0;
+  }
+  .corner_box {
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  .center_box {
+    margin-top: 20px;
+  }
+
+  .pricing_range {
+    margin-bottom: 30px;
+  }
+} ;

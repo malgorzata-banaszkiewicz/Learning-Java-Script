@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Normalization.css" />
+    <link rel="stylesheet" href="pricing.css" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="big_wrapper">
+      <div class="whole_pricing">
+        <h2 class="heading">Our Pricing</h2>
+        <div class="pricing_range">
+          <p class="input_options">Annually</p>
+          <input
+            class="price_input"
+            type="range"
+            name="type_of_payment"
+            id="type_of_payment"
+            value="1"
+            min="1"
+            max="2"
+          />
+          <p class="input_options">Monthly</p>
+        </div>
+        <div class="pricing_boxes">
+          <div class="corner_box">
+            <p class="plan_description">Basic</p>
+            <div class="price_dollar">
+              <p class="small">$</p>
+              <p class="pricing_monthly" id="pricing_monthly_basic">19.99</p>
+              <p class="pricing_annually" id="pricing_annually_basic">199.99</p>
+            </div>
+            <hr />
+            <p>500 GB Storage</p>
+            <hr />
+            <p>2 Users Allowed</p>
+            <hr />
+            <p>Send up to 3 GB</p>
+            <hr />
+            <button class="gradient_button learn_more">learn more</button>
+          </div>
+          <div class="center_box">
+            <p class="plan_description">Professional</p>
+            <div class="price_dollar">
+              <p class="small">$</p>
+              <p class="pricing_monthly" id="pricing_monthly_professional">
+                24.99
+              </p>
+              <p class="pricing_annually" id="pricing_annually_professional">
+                249.99
+              </p>
+            </div>
+            <hr />
+            <p>1 TB Storage</p>
+            <hr />
+            <p>5 users Allowed</p>
+            <hr />
+            <p>Send up to 10 GB</p>
+            <hr />
+            <button class="learn_more center_button">learn more</button>
+          </div>
+          <div class="corner_box">
+            <p class="plan_description">Master</p>
+            <div class="price_dollar">
+              <p class="small">$</p>
+              <p class="pricing_monthly" id="pricing_monthly_master">39.99</p>
+              <p class="pricing_annually" id="pricing_annually_master">
+                399.99
+              </p>
+            </div>
+            <hr />
+            <p>2 TB Storage</p>
+            <hr />
+            <p>10 Users Allowed</p>
+            <hr />
+            <p>Send up to 20 GB</p>
+            <hr />
+            <button class="gradient_button learn_more">learn more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="pricing.js"></script>
+  </body>
+</html>
