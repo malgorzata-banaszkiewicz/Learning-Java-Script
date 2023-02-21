@@ -5,4 +5,4 @@
 **objects,**
 **local storage,**
 **API,**
-**small apps.*
+**small apps.**
